@@ -19,6 +19,9 @@ public class Patient {
     }
 
 
+
+
+
     public int getPatientId() {
         return patientId;
     }
