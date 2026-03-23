@@ -13,7 +13,7 @@ public class Patient {
 
     private Patient(){}
 
-    //Buidlder
+
     public Patient(Builder builder){
 
         this.patientId = builder.patientId;
