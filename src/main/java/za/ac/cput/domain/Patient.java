@@ -14,6 +14,7 @@ public class Patient {
     private Patient(){}
 
 
+
     public Patient(Builder builder){
 
         this.patientId = builder.patientId;
