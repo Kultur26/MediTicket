@@ -1,21 +1,27 @@
 package za.ac.cput.domain;
 
+import java.time.LocalDate;
+
 public class Patient {
 
     private int patientId;
     private String patientName;
+    private String patientSurname;
     private String patientCell;
     private String patientEmail;
+    private LocalDate patientDOB;
 
     private Patient(){}
 
-    //Buidlder
+
     public Patient(Builder builder){
 
         this.patientId = builder.patientId;
         this.patientName = builder.patientName;
+        this.patientSurname = builder.patientSurname;
         this.patientCell = builder.patientCell;
         this.patientEmail = builder.patientEmail;
+        this.patientDOB = builder.patientDOB;
     }
 
 
@@ -30,6 +36,10 @@ public class Patient {
         return patientName;
     }
 
+    public String getPatientSurname() {
+        return patientSurname;
+    }
+
     public String getPatientCell() {
         return patientCell;
     }
@@ -38,13 +48,19 @@ public class Patient {
         return patientEmail;
     }
 
+    public LocalDate getPatientDOB() {
+        return patientDOB;
+    }
+
     @Override
     public String toString() {
         return "Patient{" +
                 "patientId=" + patientId +
                 ", patientName='" + patientName + '\'' +
+                ", patientSurname='" + patientSurname + '\'' +
                 ", patientCell='" + patientCell + '\'' +
                 ", patientEmail='" + patientEmail + '\'' +
+                ", patientDOB=" + patientDOB +
                 '}';
     }
 
@@ -52,8 +68,10 @@ public class Patient {
 
         private int patientId;
         private String patientName;
+        private String patientSurname;
         private String patientCell;
         private String patientEmail;
+        private LocalDate patientDOB;
 
         public Builder setPatientId(int patientId){
             this.patientId = patientId;
@@ -62,6 +80,11 @@ public class Patient {
 
         public Builder setPatientName(String patientName){
             this.patientName = patientName;
+            return this;
+        }
+
+        public Builder setPatientSurname(String patientSurname){
+            this.patientSurname = patientSurname;
             return this;
         }
 
@@ -75,11 +98,18 @@ public class Patient {
             return this;
         }
 
+        public Builder setPatientDOB(LocalDate patientDOB){
+            this.patientDOB = patientDOB;
+            return this;
+        }
+
         public Builder copy(Patient patient){
             this.patientId = patient.patientId;
             this.patientName = patient.patientName;
+            this.patientSurname = patient.patientSurname;
             this.patientCell = patient.patientCell;
             this.patientEmail = patient.patientEmail;
+            this.patientDOB = patient.patientDOB;
 
             return this;
         }
@@ -89,3 +119,7 @@ public class Patient {
         }
     }
 }
+
+
+
+
