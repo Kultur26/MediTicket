@@ -5,7 +5,7 @@ import za.ac.cput.domain.Patient;
 
 import java.time.LocalDate;
 
-public class patientFactory {
+public class PatientFactory {
 
     public static Patient createPatient(int patientId, String patientName, String patientSurname,String patientCell, String patientEmail, LocalDate patientDOB){
         if(!Helper.isValidId(patientId) ||

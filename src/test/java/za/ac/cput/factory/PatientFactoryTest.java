@@ -12,13 +12,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 final
-class patientFactoryTest {
+class PatientFactoryTest {
 
     private Patient patient;
 
     @BeforeEach
     void setUp() {
-        patient = patientFactory.createPatient(
+        patient = PatientFactory.createPatient(
                 021,
                 "Aidan",
                 "Barends",
