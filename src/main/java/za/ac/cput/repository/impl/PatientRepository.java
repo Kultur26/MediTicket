@@ -30,7 +30,7 @@ public class PatientRepository implements IPatientRepository {
     }
 
     @Override
-    public Patient read(int patientId) {
+    public Patient read(Integer patientId) {
         for(Patient patient: patientList){
             if(patient.getPatientId() == patientId){
                 return patient;
@@ -52,7 +52,7 @@ public class PatientRepository implements IPatientRepository {
     }
 
     @Override
-    public boolean delete(int patientId) {
+    public boolean delete(Integer patientId) {
         Patient patient = read(patientId);
 
         if(patient !=null){
