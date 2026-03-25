@@ -25,10 +25,6 @@ public class Patient {
         this.patientDOB = builder.patientDOB;
     }
 
-
-
-
-
     public int getPatientId() {
         return patientId;
     }
