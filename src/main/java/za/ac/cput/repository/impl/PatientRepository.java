@@ -23,12 +23,6 @@ public class PatientRepository implements IPatientRepository {
         return repository;
     }
 
-
-
-
-
-
-
     @Override
     public Patient create(Patient patient) {
         patientList.add(patient);
