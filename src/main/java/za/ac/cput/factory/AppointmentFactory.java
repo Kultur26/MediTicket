@@ -1,3 +1,9 @@
+/* AppointmentFactory.java
+Appointment Model Class
+Author: Joshua Peter Bonzet (221312536)
+Date: 26 March 2026
+*/
+
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.Appointment;

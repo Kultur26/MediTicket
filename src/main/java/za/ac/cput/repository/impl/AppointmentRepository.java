@@ -1,3 +1,9 @@
+/* AppointmentRepository.java
+Appointment Model Class
+Author: Joshua Peter Bonzet (221312536)
+Date: 26 March 2026
+*/
+
 package za.ac.cput.repository.impl;
 
 import za.ac.cput.domain.Appointment;
